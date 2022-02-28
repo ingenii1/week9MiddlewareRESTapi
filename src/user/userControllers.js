@@ -1,5 +1,9 @@
 const User = require("./userModel");
 
+
+//CRUD OPERATIONS//
+
+//CREATE OPERATION//
 exports.addUser = async (req, res) => {
   try {
     const newUser = await User.create(req.body);
